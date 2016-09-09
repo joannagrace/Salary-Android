@@ -43,15 +43,12 @@ public class MainActivity extends AppCompatActivity {
                 num2 = Double.parseDouble(etPercentage.getText().toString());
 
 
-
-
-
                 result= num * num2;
-                final String resultString = String.valueOf(result);
+                final String resultString = String.valueOf("Php"+" "+result);
                 txtResult.setText(resultString);
 
                 result2 = num - result;
-                final String resultString2 = String.valueOf(result2);
+                final String resultString2 = String.valueOf("Php"+" "+result2);
                 txtResult2.setText(resultString2);
             }
         });
