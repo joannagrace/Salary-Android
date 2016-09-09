@@ -14,9 +14,10 @@ public class MainActivity extends AppCompatActivity {
     Button btnAnalyse;
     Button btnClear;
     TextView txtResult2;
+    EditText etPercentage;
     double num;
     double result, result2;
-    double num2 = 0.10;
+    double num2;
 
 
 
@@ -32,13 +33,19 @@ public class MainActivity extends AppCompatActivity {
         btnAnalyse = (Button) findViewById(R.id.btnAnalyse);
         btnClear = (Button) findViewById(R.id.btnClear);
         txtResult2 = (TextView) findViewById(R.id.txtResult2);
-
+        etPercentage = (EditText) findViewById(R.id.etPercentage);
 
         btnAnalyse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 num = Double.parseDouble(etSalary.getText().toString());
+                num2 = Double.parseDouble(etPercentage.getText().toString());
+
+
+
+
+
                 result= num * num2;
                 final String resultString = String.valueOf(result);
                 txtResult.setText(resultString);
